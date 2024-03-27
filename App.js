@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 import MyMap from './mymap_component.js'
+import MainNavigationBar from './navigation_bar.js'
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
                     <MyMap />
                 </View>
                 <View style={{ height: "8%", backgroundColor: "#DDDDDD", flexDirection: "column" }}>
+                    <MainNavigationBar />
                 </View>
             </SafeAreaView>
         </NavigationContainer>
