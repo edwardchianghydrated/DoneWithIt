@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Text, View, Image, TouchableOpacity, Alert } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { supabase } from './libs/supabase.js'
+import { supabase } from '../libs/supabase.js'
 
 function HomeScreen() {
     return (
@@ -63,7 +63,7 @@ export default function MainNavigationBar() {
                     tabBarLabel: 'Home',
                     tabBarLabelPosition: 'below-icon',
                     tabBarIcon: () => (
-                        <Image source={require('./assets/home.png')} />
+                        <Image source={require('../assets/home.png')} />
                     ),
                 }}
             />
@@ -74,7 +74,7 @@ export default function MainNavigationBar() {
                     tabBarLabel: 'Advertisement',
                     tabBarLabelPosition: 'below-icon',
                     tabBarIcon: () => (
-                        <Image source={require('./assets/presention-chart.png')} />
+                        <Image source={require('../assets/presention-chart.png')} />
                     ),
                 }}
             />
@@ -85,7 +85,7 @@ export default function MainNavigationBar() {
                     tabBarLabel: 'Subscription',
                     tabBarLabelPosition: 'below-icon',
                     tabBarIcon: () => (
-                        <Image source={require('./assets/dollar-square.png')} />
+                        <Image source={require('../assets/dollar-square.png')} />
                     ),
                 }}
             />
@@ -99,7 +99,7 @@ export default function MainNavigationBar() {
                     ),
                     tabBarLabelPosition: 'below-icon',
                     tabBarIcon: () => (
-                        <Image source={require('./assets/profile-circle.png')} />
+                        <Image source={require('../assets/profile-circle.png')} />
                     ),
                     tabBarButton: props => (
                         <TouchableOpacity {...props} onPress={() => getNavigationName()} />
